@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Georgian Audio Typing</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="mark" aria-hidden="true">ა</span>
+        <div class="brand-copy">
+          <p class="eyebrow">GEORGIAN VOICE INPUT</p>
+          <h1>Audio to text</h1>
+        </div>
+      </header>
+      <section id="connection" class="connection" data-state="unknown" aria-label="Local server status">
+        <div class="connection-copy">
+          <div class="connection-title"><span class="status-dot" aria-hidden="true"></span><strong>Local server</strong></div>
+          <p id="server-detail" role="status">Not tested · 127.0.0.1:8000</p>
+        </div>
+        <button id="server-check" class="test-button" type="button" aria-label="Test local transcription server">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16.2 8A6.4 6.4 0 0 0 4.7 5.2L3.2 6.8M3.3 3.8v3.1h3.1M3.8 12a6.4 6.4 0 0 0 11.5 2.8l1.5-1.6m-.1 3v-3.1h-3.1"/></svg>
+          <span>Test</span>
+        </button>
+      </section>
+      <div class="actions">
+        <button id="overlay" class="secondary" type="button">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 4h12v12H4zM7 8h6M7 11h4M7 14h2"/></svg>
+          <span>Open overlay</span>
+        </button>
+      </div>
+      <p id="status" class="message" role="status" aria-live="polite">Choose a text field and control chat audio from the overlay.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

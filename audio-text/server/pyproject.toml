@@ -1,0 +1,22 @@
+[project]
+name = "georgian-audio-transcription"
+version = "0.1.0"
+description = "Local Georgian speech transcription API for the browser extension"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "accelerate>=1.0",
+    "av>=13",
+    "azure-cognitiveservices-speech>=1.41",
+    "fastapi>=0.115,<1",
+    "numpy>=2.0",
+    "onnxruntime>=1.20",
+    "python-multipart>=0.0.20",
+    "rapidocr>=3.10,<4",
+    "safetensors>=0.4",
+    "torch>=2.6",
+    "transformers>=4.45",
+    "uvicorn[standard]>=0.30,<1",
+]
+
+[tool.uv]
+package = false

@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Georgian Audio Typing",
+  "version": "0.1.0",
+  "description": "Transcribe the current tab's audio into Georgian and insert it into an editable field.",
+  "permissions": ["activeTab", "debugger", "offscreen", "scripting", "storage", "tabCapture"],
+  "host_permissions": ["http://127.0.0.1:8000/*"],
+  "background": { "service_worker": "service-worker.js" },
+  "action": {
+    "default_title": "Georgian Audio Typing",
+    "default_popup": "popup.html"
+  }
+}
